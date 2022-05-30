@@ -1,0 +1,90 @@
+/* set up formatting of img in main section */
+img {
+    border: 5px solid var(--bg-color);
+    margin-bottom: 1%;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+/* give img boxshadow and opacity on hover */
+.relative-img:hover>img {
+    opacity: 1;
+    box-shadow: 0 0 20px var(--title-color);
+    transition: ease-in-out 0.4 s;
+}
+
+/* make img relative position to allow for text position */
+.relative-img {
+    position: relative;
+}
+
+/* flex box for the smaller images, they are half the size as the big image */
+.box .relative-img {
+    width: 49%;
+}
+
+/* change image on hover */
+.relative-img:hover {
+    width: 100%;
+}
+
+/* format text-overlay */
+.text-overlay {
+    width: max-content;
+    color: var(--title-color);
+    background-color: var(--bg-color);
+}
+
+/* position project name */
+.project-name {
+    position: absolute;
+    bottom: 25px;
+    left: 5px;
+}
+
+/* dynamic sizing with fallback of 28px just incase */
+.relative-img a {
+    font-size: 28px;
+    font-size: 3vw;
+}
+
+/* centers element on parent */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    display: none;
+}
+
+/* display links on hover */
+.relative-img:hover>.hidden {
+    display: flex;
+}
+
+/* hide project name on hovering project */
+.relative-img:hover>.project-name {
+    display: none;
+}
+
+.hidden a:hover {
+    box-shadow: 0 0 20px var(--title-color);
+    transition: ease-in-out 0.4 s;
+}
+
+.margin-right {
+    margin-right: 2em;
+}
+
+.text-overlay h2 {
+    font-size: 28px;
+    margin: 5px;
+}
+
+.text-overlay h3 {
+    margin: 5px;
+}
