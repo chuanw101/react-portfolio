@@ -1,0 +1,24 @@
+/* the overall background color is only used this once */
+body {
+    background-color: var(--active-color);
+}
+
+/* set up formatting of title of main section */
+section {
+    padding-top: 20px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+section h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--text-color);
+    font-size: 36px;
+}
+
+/* set up formatting of p of main section */
+p {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
