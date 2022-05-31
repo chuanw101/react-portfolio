@@ -9,7 +9,7 @@ In case of email uses regex to check for valid email upon mouse leaving field <b
 Contact form currently do not send actual email to me, my email is on the footer
 
 ## Deployed Link
-https://chuanw101.github.io/portfolio-site/
+https://cw-portfolio-2022.herokuapp.com/
 
 ## Screen shots
 ### Regular view
