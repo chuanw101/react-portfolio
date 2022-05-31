@@ -36,7 +36,7 @@ function Contact() {
             }
         } else {
             if (email) {
-                if (/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(email)) {
+                if (/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/.test(email)) {
                     setWarning('');
                 } else {
                     setWarning("Invalid e-mail entered!")

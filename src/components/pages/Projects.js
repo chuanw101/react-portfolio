@@ -12,9 +12,9 @@ export default function Projects() {
                     <h3>HTML/CSS/JavaScript</h3>
                 </div>
                 <div class="center hidden">
-                    <a class="text-overlay margin-right" href="https://github.com/framenolan/wheres-the-beer" target="_blank">GitHub
+                    <a class="text-overlay margin-right" href="https://github.com/framenolan/wheres-the-beer" target="_blank" rel="noreferrer">GitHub
                         Link</a>
-                    <a class="text-overlay" href="https://framenolan.github.io/wheres-the-beer/" target="_blank">Deployed
+                    <a class="text-overlay" href="https://framenolan.github.io/wheres-the-beer/" target="_blank" rel="noreferrer">Deployed
                         Link</a>
                 </div>
             </div>
@@ -26,9 +26,9 @@ export default function Projects() {
                         <h3>HTML/CSS/JavaScript</h3>
                     </div>
                     <div class="center hidden">
-                        <a class="text-overlay margin-right" href="https://github.com/chuanw101/weather-dashboard" target="_blank">GitHub
+                        <a class="text-overlay margin-right" href="https://github.com/chuanw101/weather-dashboard" target="_blank" rel="noreferrer">GitHub
                             Link</a>
-                        <a class="text-overlay" href="https://chuanw101.github.io/weather-dashboard/" target="_blank">Deployed
+                        <a class="text-overlay" href="https://chuanw101.github.io/weather-dashboard/" target="_blank" rel="noreferrer">Deployed
                             Link</a>
                     </div>
                 </div>
@@ -40,9 +40,9 @@ export default function Projects() {
                         <h3>HTML/CSS/JavaScript</h3>
                     </div>
                     <div class="center hidden">
-                        <a class="text-overlay margin-right" href="https://github.com/chuanw101/work-day-scheduler" target="_blank">GitHub
+                        <a class="text-overlay margin-right" href="https://github.com/chuanw101/work-day-scheduler" target="_blank" rel="noreferrer">GitHub
                             Link</a>
-                        <a class="text-overlay" href="https://chuanw101.github.io/work-day-scheduler/" target="_blank">Deployed
+                        <a class="text-overlay" href="https://chuanw101.github.io/work-day-scheduler/" target="_blank" rel="noreferrer">Deployed
                             Link</a>
                     </div>
                 </div>
@@ -54,9 +54,9 @@ export default function Projects() {
                         <h3>HandleBars/NodeJS</h3>
                     </div>
                     <div class="center hidden">
-                        <a class="text-overlay margin-right" href="https://github.com/chuanw101/byo-backpack" target="_blank">GitHub
+                        <a class="text-overlay margin-right" href="https://github.com/chuanw101/byo-backpack" target="_blank" rel="noreferrer">GitHub
                             Link</a>
-                        <a class="text-overlay" href="https://byo-backpack.herokuapp.com/" target="_blank">Deployed
+                        <a class="text-overlay" href="https://byo-backpack.herokuapp.com/" target="_blank" rel="noreferrer">Deployed
                             Link</a>
                     </div>
                 </div>
@@ -65,6 +65,22 @@ export default function Projects() {
                     <img src="./images/work5.png" alt="place holder img5" />
                     <div class="text-overlay project-name">
                         <h2>Work 5</h2>
+                        <h3>HTML/CSS</h3>
+                    </div>
+                </div>
+
+                <div class="relative-img">
+                    <img src="./images/work5.png" alt="place holder img5" />
+                    <div class="text-overlay project-name">
+                        <h2>Work 6</h2>
+                        <h3>HTML/CSS</h3>
+                    </div>
+                </div>
+
+                <div class="relative-img">
+                    <img src="./images/work5.png" alt="place holder img5" />
+                    <div class="text-overlay project-name">
+                        <h2>Work 7</h2>
                         <h3>HTML/CSS</h3>
                     </div>
                 </div>
