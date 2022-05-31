@@ -88,3 +88,15 @@
 .text-overlay h3 {
     margin: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    /* resize the big image to be same size as the smaller ones */
+    .right>.relative-img>img {
+        height: 26.67vw;
+    }
+
+    /* all images are now full width rather than half */
+    .box .relative-img {
+        width: 100%;
+    }
+}
