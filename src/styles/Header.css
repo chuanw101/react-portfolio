@@ -55,6 +55,11 @@ header h1 {
     border-bottom: 4px solid var(--bg-color);
 }
 
+.nav-link:hover {
+    color: var(--active-color);
+    border-bottom: 4px solid var(--active-color);
+}
+
 .active {
     color: var(--active-color);
     border-bottom: 4px solid var(--active-color);
