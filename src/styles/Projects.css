@@ -1,5 +1,5 @@
 /* set up formatting of img in main section */
-img {
+.img {
     border: 5px solid var(--bg-color);
     margin-bottom: 1%;
     width: 100%;

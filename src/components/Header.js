@@ -25,7 +25,7 @@ export default function Header({ currentPage, handlePageChange }) {
                     > Contact </a>
                 </li>
                 <li className="nav-item">
-                    <a href="./assets/ChuanWang_Resume.pdf" target="_blank" className="nav-link"> Resume </a>
+                    <a href="./ChuanWang_Resume.pdf" target="_blank" className="nav-link"> Resume </a>
                 </li>
             </ul>
         </header>

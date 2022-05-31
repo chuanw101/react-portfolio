@@ -33,6 +33,7 @@ header h1 {
     padding: 1% 2% 1% 7%;
     font-size: 48px;
     background-color: var(--bg-color);
+    border-radius: 0 15px 15px 0;
 }
 
 /* make sure nav is properly formatted */

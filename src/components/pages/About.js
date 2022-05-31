@@ -3,7 +3,8 @@ import React from 'react';
 export default function About() {
     return (
         <section>
-            <h1>About Page</h1>
+            <h1>About Me</h1>
+            <img src="./images/avatar.jpg" alt="profile pic"></img>
             <p>My name is Chuan Wang, I'm currently a student at UW Coding Boot Camp. I got my bachelors back in
                 2014 in Computer Science from Univeristy of Washington Bothell, however I did not work in the field
                 outside of being an teacher assistant and my internship at Digitial Futures Lab at the school.</p>
