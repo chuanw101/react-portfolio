@@ -1,22 +1,99 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../../styles/Contact.css';
 
-export default function Contact() {
-  return (
-    <section>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </section>
-  );
+function Contact() {
+    // Here we set two state variables for firstName and lastName using `useState`
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [warning, setWarning] = useState('');
+
+    const handleInputChange = (e) => {
+        // Getting the value and name of the input which triggered the change
+        const { name, value } = e.target;
+        // set value based on name
+        if (name === 'name') {
+            setName(value);
+        } else if (name === 'email') {
+            setEmail(value);
+        } else if (name === 'message') {
+            setMessage(value);
+        }
+    };
+
+    const handleMouseLeave = (e) => {
+        if (e.target.name === 'name') {
+            if (name) {
+                setWarning('');
+            } else {
+                setWarning("You must enter a name!");
+            }
+        } else if (e.target.name === 'message') {
+            if (message) {
+                setWarning('');
+            } else {
+                setWarning("You must enter a message!");
+            }
+        } else {
+            if (email) {
+                if (/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(email)) {
+                    setWarning('');
+                } else {
+                    setWarning("Invalid e-mail entered!")
+                }
+            } else {
+                setWarning("You must enter an e-mail!")
+            }
+        }
+    };
+
+    const handleFormSubmit = (e) => {
+        // Preventing the default behavior of the form submit (which is to refresh the page)
+        e.preventDefault();
+
+        // Alert input, clear form (temp until email functionality)
+        alert(`Hello ${name}, your email is ${email}, you message was ${message}`);
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
+
+    return (
+        <section>
+            <h1>Contact Me</h1>
+            <form className="form">
+                <input
+                    value={name}
+                    name="name"
+                    onChange={handleInputChange}
+                    onMouseLeave={handleMouseLeave}
+                    type="text"
+                    placeholder="Name"
+                />
+                <input
+                    value={email}
+                    name="email"
+                    onChange={handleInputChange}
+                    onMouseLeave={handleMouseLeave}
+                    type="text"
+                    placeholder="E-Mail"
+                />
+                <textarea
+                    value={message}
+                    name="message"
+                    onChange={handleInputChange}
+                    onMouseLeave={handleMouseLeave}
+                    placeholder="Message"
+                />
+                <br></br>
+                <p>{warning}</p>
+                <br></br>
+                <button type="button" onClick={handleFormSubmit}>
+                    Send
+                </button>
+            </form>
+        </section>
+    );
 }
+
+export default Contact;

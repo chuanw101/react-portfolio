@@ -1,0 +1,26 @@
+input,
+textarea {
+    width: 70%;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    font-size: 24px;
+    background-color: var(--title-color);
+    border: none;
+    color: var(--active-color);
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section p {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: bold;
+}

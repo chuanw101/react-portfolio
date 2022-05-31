@@ -1,0 +1,7 @@
+/* set up formatting of p of main section */
+section p {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
