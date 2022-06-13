@@ -18,12 +18,12 @@ export default function Header({ currentPage, handlePageChange }) {
                         className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
                     > Projects </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                     <a href="#contact"
                         onClick={() => handlePageChange('Contact')}
                         className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
                     > Contact </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                     <a href="./ChuanWang_Resume.pdf" target="_blank" className="nav-link"> Resume </a>
                 </li>

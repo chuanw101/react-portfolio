@@ -6,15 +6,15 @@ export default function Projects() {
         <section>
             <h1>My Projects</h1>
             <div className="relative-img">
-                <img className="img" src="./images/wheres-the-beer.png" alt="wheres the beer screen shot" />
+                <img className="img" src="./images/foundark.png" alt="foundark shot" />
                 <div className="text-overlay project-name">
-                    <h2>Where's the beer?</h2>
-                    <h3>HTML/CSS/JavaScript</h3>
+                    <h2>Found Ark</h2>
+                    <h3>REACTjs/Express/Sql</h3>
                 </div>
                 <div className="center hidden">
-                    <a className="text-overlay margin-right" href="https://github.com/framenolan/wheres-the-beer" target="_blank" rel="noreferrer">GitHub
+                    <a className="text-overlay margin-right" href="https://github.com/chuanw101/found-ark" target="_blank" rel="noreferrer">GitHub
                         Link</a>
-                    <a className="text-overlay" href="https://framenolan.github.io/wheres-the-beer/" target="_blank" rel="noreferrer">Deployed
+                    <a className="text-overlay" href="https://found-ark.herokuapp.com/" target="_blank" rel="noreferrer">Deployed
                         Link</a>
                 </div>
             </div>
@@ -62,26 +62,16 @@ export default function Projects() {
                 </div>
 
                 <div className="relative-img">
-                    <img className="img" src="./images/work5.png" alt="place holder img5" />
+                    <img className="img" src="./images/wheres-the-beer.png" alt="wheres the beer screen shot" />
                     <div className="text-overlay project-name">
-                        <h2>Work 5</h2>
-                        <h3>HTML/CSS</h3>
+                        <h2>Where's the beer?</h2>
+                        <h3>HTML/CSS/JavaScript</h3>
                     </div>
-                </div>
-
-                <div className="relative-img">
-                    <img className="img" src="./images/work5.png" alt="place holder img5" />
-                    <div className="text-overlay project-name">
-                        <h2>Work 6</h2>
-                        <h3>HTML/CSS</h3>
-                    </div>
-                </div>
-
-                <div className="relative-img">
-                    <img className="img" src="./images/work5.png" alt="place holder img5" />
-                    <div className="text-overlay project-name">
-                        <h2>Work 7</h2>
-                        <h3>HTML/CSS</h3>
+                    <div className="center hidden">
+                        <a className="text-overlay margin-right" href="https://github.com/framenolan/wheres-the-beer" target="_blank" rel="noreferrer">GitHub
+                            Link</a>
+                        <a className="text-overlay" href="https://framenolan.github.io/wheres-the-beer/" target="_blank" rel="noreferrer">Deployed
+                            Link</a>
                     </div>
                 </div>
             </div>
